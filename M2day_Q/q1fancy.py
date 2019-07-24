@@ -5,6 +5,7 @@ def sum_digits(num):
     while num != 0:
         s += num % 10
         num = num // 10
+    return s
         
 
 def get_digits(num):
