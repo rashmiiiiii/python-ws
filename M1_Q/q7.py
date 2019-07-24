@@ -1,24 +1,19 @@
 '''7.Write a program to accept a number from the user and determine the sum of digits of that number. Repeat the operation until the sum gets to be a single digit number.'''
 
 sum = 0
-
 count = 0
+def find_sum(num):
+    sum = 0
+    while num > 0 or sum > 9:
+        if num == 0:
+            num = sum 
+            sum = 0
+        sum += num % 10
+        num = num // 10
+    return sum
 num = int(input("enter the number:"))
-while num > 0:
-    rem = num % 10
-    count += 1
-    sum = sum + rem
-    num = num // 10
-while count != 0:
-    tsum = 0
-    rem = sum % 10
-    tsum +=rem
-    sum = sum //10
-    while tsum >=0 and tsum <=9:
-        rem = tsum % 10
-        
-        
-    print(tsum)
+res = find_sum(num)
+print(res)
 
 
     
