@@ -22,6 +22,23 @@ for word in words:
     else :
         d[word] +=1
 print(d)
-max = 0
+cmax = -9999
+max = ' '
+cmin = 9999
+min = ' '
+for i in d:
+    if d[i] > cmax:
+        cmax = d[i]
+        max = i
+for i in d:
+    if d[i] < cmin:
+        cmin=d[i]
+        min = i
+
+print(f"Word appearing maximum times: {max};{cmax} times")
+print(f"Word appearing minimum times: {min};{cmin} times")
+    
+
+
 
     
