@@ -29,7 +29,8 @@ def maxSalaryEmp():
     for ms in max_sal:
         ms.showInfo()
 def showEmpCountByDeptName():
-    s = list(set(map(lambda emp:emp.dept_name,lst_emp)))
+    #s = list(set(map(lambda emp:emp.dept_name,lst_emp)))
+    pass
     
 def showTotalSalByDeptName():
     pass
