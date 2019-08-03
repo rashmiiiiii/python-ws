@@ -13,7 +13,7 @@ def search(p_id):
     else:
         for k in dic:
             if k == p_id:
-                print(f"product id {p_id} value {dic[p_id]}is found")
+                print(f"product id {p_id} value {dic[p_id]} is found")
             else:
                 print(f"{p_id} is not found")
     
